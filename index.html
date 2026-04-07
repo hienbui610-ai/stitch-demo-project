@@ -243,4 +243,35 @@
             </p>
 </div>
 </footer>
+
+<!-- Chatbot UI -->
+<div id="chatbot-container">
+    <div id="chat-window">
+        <div id="chat-header">
+            <div class="flex items-center">
+                <span class="status-dot"></span>
+                <span class="font-extrabold text-on-surface tracking-tight" style="font-family: 'Manrope', sans-serif;">AI Expert Assistant</span>
+            </div>
+            <div class="flex gap-4">
+                <span onclick="refreshChat()" class="material-symbols-outlined cursor-pointer refresh-icon text-on-surface-variant hover:text-primary transition-all" style="font-size: 20px;">refresh</span>
+                <span onclick="closeChat()" class="material-symbols-outlined cursor-pointer text-on-surface-variant hover:text-error" style="font-size: 20px;">close</span>
+            </div>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Nhập câu hỏi của bạn...">
+            <button onclick="sendMessage()" class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg hover:bg-primary-container/40 transition-all">send</button>
+        </div>
+    </div>
+    
+    <div id="chat-trigger" onclick="toggleChat()">
+        <span class="material-symbols-outlined" style="font-size: 32px;">smart_toy</span>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="chatbot.css">
+<script src="chatbot.js"></script>
+
 </body></html>
