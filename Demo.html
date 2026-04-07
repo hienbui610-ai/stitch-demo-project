@@ -1,0 +1,246 @@
+<!DOCTYPE html><html class="light" lang="vi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#3e4c16",
+                        "surface-container-high": "#eef1ed",
+                        "on-surface-variant": "#42493e",
+                        "on-tertiary-fixed-variant": "#005227",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf6",
+                        "primary-fixed-dim": "#b8e1c8",
+                        "tertiary-container": "#2e8b57",
+                        "outline-variant": "#c2c9bb",
+                        "on-surface": "#191c1a",
+                        "primary-fixed": "#d4f5e2",
+                        "on-secondary-container": "#5a682f",
+                        "surface-tint": "#5a8a70",
+                        "primary": "#5a8a70",
+                        "tertiary-fixed-dim": "#99eebb",
+                        "on-tertiary-fixed": "#00210c",
+                        "secondary-container": "#e6f0c8",
+                        "on-primary": "#ffffff",
+                        "surface": "#f8faf6",
+                        "on-primary-fixed-variant": "#355e4a",
+                        "background": "#f8faf6",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d8dbd7",
+                        "surface-container-highest": "#e5e8e3",
+                        "primary-container": "#7ab095",
+                        "surface-container": "#f1f3f0",
+                        "inverse-on-surface": "#eff1ed",
+                        "on-tertiary-container": "#dfffe4",
+                        "secondary-fixed": "#ebf5cd",
+                        "inverse-surface": "#2e312f",
+                        "inverse-primary": "#b8e1c8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#b5ffcc",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#002113",
+                        "surface-container-low": "#f6f8f5",
+                        "on-secondary-fixed": "#161f00",
+                        "error-container": "#ffdad6",
+                        "outline": "#73796d",
+                        "secondary": "#7a8a4f",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c1a",
+                        "on-primary-container": "#e0fdf0",
+                        "secondary-fixed-dim": "#cedca3",
+                        "surface-variant": "#e1e3df",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#007a3c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #7ab095 0%, #a2cbb5 100%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #5a8a70 0%, #7ab095 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f8faf6]/80 dark:bg-[#191c1a]/80 backdrop-blur-md shadow-[0_12px_40px_rgba(25,28,26,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-black tracking-tighter text-[#191c1a] dark:text-[#f8faf6]" style="">8learning</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope font-semibold tracking-tight text-[#5a8a70] border-b-2 border-[#5a8a70] pb-1 transition-colors duration-300" href="#" style="">Dịch vụ</a>
+<a class="font-manrope font-semibold tracking-tight text-[#42493e] dark:text-[#c2c9bb] hover:text-[#5a8a70] transition-colors duration-300" href="#" style="">Dự án</a>
+<a class="font-manrope font-semibold tracking-tight text-[#42493e] dark:text-[#c2c9bb] hover:text-[#5a8a70] transition-colors duration-300" href="#" style="">Về tôi</a>
+<a class="font-manrope font-semibold tracking-tight text-[#42493e] dark:text-[#c2c9bb] hover:text-[#5a8a70] transition-colors duration-300" href="#" style="">Đánh giá</a>
+</div>
+<button class="editorial-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold scale-95 active:scale-90 transition-transform" style="">
+                Bắt đầu ngay
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-20 lg:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-3/5 space-y-8 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase" style="">Đơn vị tư vấn L&amp;D chuyên biệt</span>
+<h1 class="text-6xl lg:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.05]" style="">
+                        Nâng tầm trải nghiệm <span class="text-primary italic font-medium" style="">học tập</span> cùng 8learning
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed" style="">
+                        Chúng tôi xây dựng các chiến lược đào tạo và giải pháp học tập số giúp thúc đẩy sự tăng trưởng thông qua tri thức và thiết kế có định hướng.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="editorial-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:opacity-90 transition-all" style="">
+                            Hợp tác</button>
+<button class="bg-surface-container-high text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all" style="">
+                            Portfolio</button>
+</div>
+</div>
+<div class="lg:w-2/5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl rotate-3 bg-surface-container-low">
+<img alt="Không gian làm việc tối giản với bình gốm xanh và ánh nắng tự nhiên" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_D1Xh9re6aBHJObap87FU5cjrTaUIY96gH7y9uCF11fEGDzeVaAcdwdiVSnDwKc8tdG7dsaGoBc8WGJAIp7JPHgQe3mgNUcZtX9sMYEQxDSpVJjiXN1PfXJ1FctKSYOQwObGdYamMIAMSHr57LA7XKb7LfWkE_unkZt4632-e37F2VV1vwUXM1lDj0cLmFowCd0NXLz_CcHdL5kwLzvbyAbw8FFSyASXnYZeAxUh5n3kBwfqXdThLjGf4ieIt6QHGvQT1faqjGmAg" style="">
+</div>
+<div class="absolute -bottom-6 -left-6 aspect-square w-48 rounded-xl overflow-hidden shadow-xl -rotate-6 border-8 border-surface">
+<img alt="Sổ tay da thủ công và bút máy trên nền vải lanh" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMLp0HLLOlUPYHyZy7tI_o3kbatQpTzHWy3p9QGFQlD0WMN_gIpjCL-0OlItpGudF9Oa61w2k3L4SbgF6BeMCPmKs5fDrPalBP3G8TT9g3SZLRdotkC9dmMlY2ZIUeSFiApmo8DAnlL5__XCAOVOSTgOcGNBxWcgxTYbUTDuAuYJZQoL1k7Vg0yjeVgA4R7Xe0rQeAprdm1tvAKwekYqaDaCmQccQBmzTf2AYBVvgd-RZ6cN9RgXvzoRCmepe7rkJGWvxr-Goefxp4" style="">
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 -z-10 opacity-10 blur-3xl">
+<div class="w-[500px] h-[500px] bg-primary rounded-full"></div>
+</div>
+</section>
+<!-- What We Do Section -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<span class="text-sm font-bold tracking-[0.2em] text-primary uppercase" style="">Dịch vụ</span>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight mt-4" style="">Chúng tôi làm gì</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Instructional Design Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_12px_40px_rgba(25,28,26,0.06)] hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="">architecture</span>
+<h3 class="text-2xl font-bold mb-4 text-on-surface" style="">Thiết kế bài giảng (ID)</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6" style="">
+                            Dựa trên khoa học nhận thức, chúng tôi thiết kế lộ trình học tập giúp tối đa hóa khả năng ghi nhớ thông qua các phương pháp giảng dạy phù hợp.
+                        </p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline" href="#" style="">
+                            Tìm hiểu thêm <span class="material-symbols-outlined text-sm" style="">arrow_forward</span>
+</a>
+</div>
+<!-- LMS Support Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_12px_40px_rgba(25,28,26,0.06)] hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="">hub</span>
+<h3 class="text-2xl font-bold mb-4 text-on-surface" style="">Hỗ trợ hệ thống LMS</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6" style="">
+                            Kỹ thuật hoàn hảo kết hợp with thiết kế lấy con người làm trung tâm. Chúng tôi tối ưu hóa nền tảng để tạo môi trường học tập liền mạch.
+                        </p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline" href="#" style="">
+                            Tìm hiểu thêm <span class="material-symbols-outlined text-sm" style="">arrow_forward</span>
+</a>
+</div>
+<!-- Content Development Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_12px_40px_rgba(25,28,26,0.06)] hover:bg-surface-bright transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="">stylus_note</span>
+<h3 class="text-2xl font-bold mb-4 text-on-surface" style="">Phát triển nội dung</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6" style="">
+                            Từ các module e-learning tương tác đến nội dung video chuyên nghiệp, chúng tôi mang những câu chuyện giáo dục vào cuộc sống một cách chính xác.
+                        </p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline" href="#" style="">
+                            Tìm hiểu thêm <span class="material-symbols-outlined text-sm" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Profile Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="relative">
+<div class="aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-low">
+<img alt="Chân dung Hiền Bùi trong trang phục công sở chuyên nghiệp" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Ru6gxPl7Eo_za8WkJszLaRkOyo5h8xAqkF4ZS75jwsEbFVffKFateHP-LUuuJc_uHYeJx2XwXBuSz5RjvmQ8zLpobOHmnrVKoqK6pS81QAj7MQ1cdNfkBYxf2xzCM5ZBnLL7nGTksn--mG6TkLM7h21SUf2qKhbFcjDsdLzOMsAgdiCzWblpM4wpjLJDtrU1zkDl9xqO_QJNKLr5jU0AZ6cmNlT42cahQtvMaTpOU4J8npQ41nDbhpbn8J9JXxMjJxP8_SNz5E1N" style="">
+</div>
+<div class="absolute bottom-4 right-4 bg-tertiary text-on-tertiary p-6 rounded-xl shadow-xl max-w-xs">
+<p class="font-headline italic text-lg leading-snug" style="">"Học tập không phải là một sản phẩm, đó là một hành trình phát triển và chuyển hóa."</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<span class="text-sm font-bold tracking-[0.2em] text-primary uppercase" style="">Người dẫn dắt</span>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight" style="">About me</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed" style="">
+                        Với hơn một thập kỷ kinh nghiệm trong lĩnh vực thiết kế bài giảng và đào tạo tổ chức, Hiền sáng lập 8learning để thu hẹp khoảng cách giữa đào tạo kỹ thuật và kết nối con người.
+                    </p>
+<p class="text-lg text-on-surface-variant" style="">
+                        Phương pháp của cô kết hợp sự chính xác của kỹ thuật với sự thấu cảm của giáo dục, đảm bảo mọi dự án không chỉ hoàn thành, mà còn được ghi nhớ sâu sắc.
+                    </p>
+<div class="pt-4">
+<button class="bg-surface-container-high text-primary px-8 py-3 rounded-lg font-bold hover:bg-surface-container-highest transition-all flex items-center gap-3" style="">
+                            Câu chuyện của chúng tôi <span class="material-symbols-outlined" style="">menu_book</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-8 pb-24">
+<div class="max-w-7xl mx-auto text-on-primary rounded-3xl p-12 lg:p-24 relative overflow-hidden text-center cta-gradient shadow-xl">
+<div class="relative z-10 max-w-3xl mx-auto space-y-8">
+<h2 class="text-4xl lg:text-6xl font-extrabold tracking-tighter" style="">Sẵn sàng để nâng tầm đội ngũ của bạn?</h2>
+<p class="text-xl text-on-primary-container opacity-90 leading-relaxed" style="">
+                        Hãy hợp tác cùng chúng tôi để xây dựng một trải nghiệm học tập phản ánh đúng giá trị thương hiệu và mang lại thành công đo lường được.
+                    </p>
+<div class="flex justify-center pt-4">
+<button class="bg-on-primary text-primary px-10 py-5 rounded-lg font-black text-xl hover:scale-105 transition-transform shadow-2xl" style="">
+                            Đặt lịch tư vấn
+                        </button>
+</div>
+</div>
+<!-- Abstract Design Detail -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-container opacity-20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-[#f2f4f0] dark:bg-[#191c1a]">
+<div class="flex flex-col items-center gap-8 px-4 w-full">
+<span class="font-bold text-[#191c1a] dark:text-[#f8faf6] text-xl tracking-tighter" style="">8learning</span>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-manrope text-sm uppercase tracking-widest text-[#42493e] dark:text-[#c2c9bb] hover:underline transition-all" href="#" style="">Chính sách bảo mật</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-[#42493e] dark:text-[#c2c9bb] hover:underline transition-all" href="#" style="">Điều khoản dịch vụ</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-[#42493e] dark:text-[#c2c9bb] hover:underline transition-all" href="#" style="">Liên hệ</a>
+</div>
+<div class="w-full max-w-7xl h-px bg-outline-variant/20"></div>
+<p class="font-manrope text-sm uppercase tracking-widest text-[#42493e] dark:text-[#c2c9bb]" style="">
+                © 2024 8learning. Bảo lưu mọi quyền.
+            </p>
+</div>
+</footer>
+</body></html>
